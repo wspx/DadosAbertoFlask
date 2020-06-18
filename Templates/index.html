@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+{% block title %}Index{% endblock %}
+
+
+{% block content %}
+   
+
+<div class="row  text-center">
+    <div class="col">
+        <h1>Dados Abertos da Câmara dos Deputados</h1>
+    </div>
+</div>
+
+   
+
+<div class="row mt-4">
+    <div class="col">
+
+        <div class="card">
+        
+        <div class="card-header text-center">
+          <strong>Sobre Este Projeto</strong>
+        </div>
+        
+        <div class="card-body text-center">
+            <p class="card-text">
+                Este pequeno sistema Web foi desenvolvido por mim, <strong>William da Silva Pereira</strong> para matéria <strong>Tópicos em Computação II</strong> mistrada pelo professor <strong>Clodonil Trigo</strong> no ano de 2020 no <a href="https://unasp.br" target="blank">Centro Universitário Adventista de São Paulo</a>
+            </p>
+
+            <p class="card-text"><strong>As principais funcionaliades desse projeto:</strong></p>
+
+            <a href="/Deputados" class="btn btn-primary ">Deputados</a>
+            <a href="/Partidos" class="btn btn-primary ">Partidos</a>
+            <a href="/Comparativo" class="btn btn-primary ">Comparativo</a>
+
+            <p></p>
+
+            <p class="card-text"> <em>Todo esse projeto foi desenvolvido com o MicroFramework  <a href="https://palletsprojects.com/p/flask/" target="blank">Flask</a> </em> </p>
+        </div>
+        
+        <div class="card-footer text-muted text-center">
+            <a href="https://github.com/wspx" class="badge badge-secondary" target="blank">
+                <span><img src="{{ url_for ('static', filename = 'github.svg') }}" width="20" height="20"></span>  |   WPSX
+            </a>
+
+            <a href="https://github.com/clodonil" class="badge badge-secondary" target="blank">
+                <span><img src="{{ url_for ('static', filename = 'github.svg') }}" width="20" height="20"></span>  |   Clodonil
+            </a>
+        </div>
+      
+    </div>
+
+    </div>
+</div>
+
+    
+
+    <p></p>
+
+{% endblock %}

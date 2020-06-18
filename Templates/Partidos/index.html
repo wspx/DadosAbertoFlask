@@ -1,0 +1,58 @@
+{% extends 'layout.html' %}
+{% block title %}Partidos{% endblock %}
+
+
+
+
+{% block content %}
+
+<h1>Partidos</h1>
+
+
+{% endblock %}
+
+
+
+{% block table %}
+
+<table id="myTable" class="table mt-5">
+  
+    <thead class="thead-dark">
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Nome do Partido</th>
+      <th scope="col">Sigla</th>
+      <th scope="col">Ações</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+    {% for partido in partidos %}
+        <tr>
+            <th scope="row">{{ partido.id }}</th>
+            <td>{{ partido.nome }}</td>
+            <td>{{ partido.sigla }}</td>
+            <td><a href="/Partidos/{{partido.id}}/Membros" class="btn btn-primary" role="button">Membros</a></td>
+        </tr>
+    {% endfor %}    
+
+  </tbody>
+
+</table>
+
+{% endblock %}
+
+
+{% block extra_scripts %}
+<script>
+    $(document).ready( function () {
+        $('#myTable').DataTable({
+          "lengthMenu": [[50, 100, -1], [50, 100, "All"]],
+          "pageLength": 50
+        });
+    } );
+</script>
+{% endblock %}
+
+

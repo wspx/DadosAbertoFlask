@@ -1,0 +1,63 @@
+{% extends 'layout.html' %}
+{% block title %}Membros{% endblock %}
+
+
+
+
+{% block content %}
+
+<h1>Membros do Partidos</h1>
+<h5>Nome Partidos: <strong>{{ partido.nome }}</strong> </h5>
+<h5>TOTAL de Membros: {{ partido.status['totalMembros'] }}</h5>
+
+
+{% endblock %}
+
+
+
+{% block table %}
+
+<table id="myTable" class="table mt-5">
+  
+    <thead class="thead-dark">
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Foto</th>
+      <th scope="col">Nome Deputado</th>
+      <th scope="col">UF</th>
+      <th scope="col">Email</th>
+      <th scope="col">Ações</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+    {% for membro in membros %}
+        <tr>
+            <th scope="row">{{ membro['id'] }}</th>
+            <td><img src="{{membro['urlFoto'] }}" width="50" height="70"></td>
+            <td>{{ membro['nome'] }}</td>
+            <td>{{ membro['siglaUf'] }}</td>
+            <td><a href="mailto:{{ membro['email'] }}">{{ membro['email'] }}</a></td>
+            <td><a href="/Deputados/{{ membro['id'] }}/Gastos" class="btn btn-primary">Gastos</a> <a href="/Deputados/{{membro['id']}}" class="btn btn-primary" role="button">Detalhes</a> </td>
+            
+        </tr>
+    {% endfor %}    
+
+  </tbody>
+
+</table>
+
+{% endblock %}
+
+
+{% block extra_scripts %}
+<script>
+    $(document).ready( function () {
+        $('#myTable').DataTable({
+          "lengthMenu": [[50, 100, -1], [50, 100, "All"]],
+          "pageLength": 50
+        });
+    } );
+</script>
+{% endblock %}

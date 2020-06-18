@@ -1,0 +1,48 @@
+{% extends './layout.html' %}
+{% block title %}Inforamções Deputado{% endblock %}
+
+
+{% block content %}
+
+<h1>Informações do Deputado</h1>
+
+<div class="card mt-5">
+
+    <div class="row no-gutters">
+        
+        <div class="col-md-4 border">
+            <img src="{{ infoDeputado.ultimoStatus['urlFoto'] }}" class="card-img" width="400" height="450">
+        </div>
+
+        <div class="col-md-8">
+
+            <div class="card-body">
+
+                <h5 class="card-title"> <strong>{{infoDeputado.nomeCivil}}</strong> </h5>
+                <hr/>
+
+                <dl class="dl-horizontal">
+
+                    <dt>ID</dt>                  <dd>{{infoDeputado.id}}</dd>
+                    <dt>Nome Eleitoral</dt>      <dd>{{infoDeputado.ultimoStatus['nomeEleitoral']}}</dd>
+                    <dt>Partido</dt>             <dd>{{infoDeputado.ultimoStatus['siglaPartido']}}</dd>
+                    <dt>Estado</dt>              <dd>{{infoDeputado.ultimoStatus['siglaUf']}}</dd>
+                    <dt>CPF</dt>                 <dd>{{infoDeputado.cpf}}</dd>
+                    <dt>Data Nascimento</dt>     <dd>{{infoDeputado.dataNascimento}}</dd>
+                    <dt>Email</dt>               <dd>{{infoDeputado.ultimoStatus['email']}}</dd>
+
+                </dl>
+                
+                
+                <p class="card-text"><small class="text-muted">{{infoDeputado.uri}}</small></p>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+{% endblock %}
+
+
+
+

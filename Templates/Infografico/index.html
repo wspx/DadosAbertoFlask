@@ -1,0 +1,30 @@
+{% extends './layout.html' %}
+{% block title %}Infografico{% endblock %}
+
+
+
+{% block content %}
+
+<h1>Comparativo</h1>
+<h5>Quantidade de Deputados X Deputadas</h5>
+
+
+<div class="alert alert-warning" role="alert">
+    <p><strong>O processamente é demorado mesmo! Por causa das várias consultas a API dos DadosAbertos</strong></p>
+    <p><em>OBS: No terminal é possivel ver o processamento dos dados da API</em></p>
+    <a href="/Comparativo/Mostrar" class="btn btn-primary">Calcular Comparativo</a>
+</div>
+
+<hr/>
+
+
+<div class="row">
+    <div class="col" style="width: 400px; height: 400px;">
+        <canvas id="myChart"></canvas>
+    </div>
+</div>
+
+
+{% endblock %}
+
+

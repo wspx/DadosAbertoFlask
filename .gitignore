@@ -1,0 +1,4 @@
+#GITIGNORE
+
+.venv
+__pycache__
