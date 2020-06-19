@@ -1,9 +1,8 @@
 # DadosAbertoFlask
 
-[logoGithub]: https://raw.githubusercontent.com/wspx/DadosAbertoFlask/master/static/github.svg
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-![logoGithub] WSPX
-![logoGithub] Clodonil
+[logoGithub]: https://raw.githubusercontent.com/wspx/DadosAbertoFlask/master/static/github.svg
 
 ***
 
