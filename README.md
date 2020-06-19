@@ -44,10 +44,28 @@ git clone https://github.com/wspx/DadosAbertosFlask.git
 cd DadosAbertosFlask
 ```
 
-2. **Crie um Ambiente Virtual do Python.**
+2. **Instalar e Criar um Ambiente Virtual do Python**
 
-Criar um ambiente virtual em python ajuda a não poluir o teu Python com um monte de biblioteca de várias projetos.
-Cada projeto terá apenas as biliotecas necessárias para o projeto ser executado.
+   Criar um ambiente virtual ajuda a não poluir o teu Python com um monte de biblioteca de vários projetos no projeto atual.
 
+   Desse modo, o projeto terá apenas as bibliotecas necessárias para o projeto ser executado.   
+    
+* **Instalar o Virtualenv no Python**
+
+```bash
+pip install virtualenv
+```
+
+* **Criar o Ambiente Virtual para o Projeto**
+
+  (Ao executar o comando abaixo, irá criar uma pasta oculta dentro do diretório atual chamada **/.venv/**).
+
+  Eu recomendo criar a pasta com esse nome porque esta pasta já está sendo ignorada pelo arquivo .gitignore.
+
+  *Caso deseje colocar outro nome para a pasta virtual, não se esqueça de mudar o arquivo .gitignore .*
+
+  ```bash
+  virtualenv .venv
+  ```
 
 
