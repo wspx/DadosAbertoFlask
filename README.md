@@ -38,6 +38,18 @@ git clone https://github.com/wspx/DadosAbertosFlask.git
 
 ## Instação e Execução
 
+### Sumário
+
+1. [Abra a pasta onde este projeto foi clonado](#)
+2. [Instalar e Criar um Ambiente Virtual do Python](#)
+3. [Ativar e Desativar o Ambiente Virtual](#)
+4. [Instalar as Dependências do Projeto](#)
+5. [Executar o Projeto](#)
+6. [Extras](#)
+
+***
+
+
 1. **Abra a pasta onde este projeto foi clonado**
 
 ```bash
@@ -101,7 +113,7 @@ deactivate
 ```bash
 pip install -r requirements.txt
 ```   
-   
+
 5. **Executar o Projeto**
 
    Após feitos todos os passos anteriores, basta digitar o comando abaixo iniciar o Servidor Web do Flask:
