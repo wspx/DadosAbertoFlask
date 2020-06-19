@@ -50,13 +50,13 @@ cd DadosAbertosFlask
 
    Desse modo, o projeto terá apenas as bibliotecas necessárias para o projeto ser executado.   
     
-* **Instalar o Virtualenv no Python**
+* ***Instalar o Virtualenv no Python***
 
 ```bash
 pip install virtualenv
 ```
 
-* **Criar o Ambiente Virtual para o Projeto**
+* ***Criar o Ambiente Virtual para o Projeto***
 
   (Ao executar o comando abaixo, irá criar uma pasta oculta dentro do diretório atual chamada **/.venv/**).
 
@@ -64,8 +64,67 @@ pip install virtualenv
 
   *Caso deseje colocar outro nome para a pasta virtual, não se esqueça de mudar o arquivo .gitignore .*
 
-  ```bash
-  virtualenv .venv
-  ```
+```bash
+virtualenv .venv
+```
+
+3. **Ativar e Desativar o Ambiente Virtual**
+
+   Para ativar o ambiente virtual, basta digitar o comando abaxio de acordo com o teu Sistema Operacional.
+   
+###### Windows
+
+```bat
+.venv\Scripts\activate.bat
+```
+   
+###### Linux e MacOS
+
+```bash
+source .venv/bin/activate
+```
+   
+###### Para desativar o Ambiente Virutal em ambos os sistemas.
+   
+```bash
+deactivate
+```
+
+4. **Instalar as Dependências do Projeto**
+
+   Todas as dependências deste projeto estão listadas no arquivo [*requirements.txt*](https://github.com/wspx/DadosAbertoFlask/blob/master/requirements.txt).
+   
+   Para instalar todas elas de uma vez, basta seguir o comando abaixo:
+   
+   ###### *NÃO ESQUEÇA QUE O AMBIENTE VIRTUAL DEVE ESTAR ATIVO!*
+   
+```bash
+pip install -r requirements.txt
+```   
+   
+5. **Executar o Projeto**
+
+   Após feitos todos os passos anteriores, basta digitar o comando abaixo iniciar o Servidor Web do Flask:
+   
+   ###### *NÃO ESQUEÇA QUE O AMBIENTE VIRTUALDEVE ESTAR ATIVO!*
+   
+```bash
+python app.py
+``` 
+
+6. **Extras**
+   
+   Ao executar pela primeira vez a aplicação, ela está configurado para sempre ser acessível apenas no *localhost ou 127.0.0.1* da porta *8080*.
+   
+   Contudo, é possivel acessar essa aplicação Flask através de qualquer outro dispositipo na tua rede local.
+   
+   Para isso, basta fazer as seguintes alterrações no arquivo [app.py](https://github.com/wspx/DadosAbertoFlask/blob/master/app.py) na ultima linha do arquivo pelo trecho abaixo:
+   
+```python
+if __name__ == "__main__":
+   app.run(host='0.0.0.0', debug=True, port=8080)
+``` 
 
 
+
+#### E com isso, está documentação se encerra!
