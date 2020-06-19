@@ -2,10 +2,8 @@
 
 [logoGithub]: https://raw.githubusercontent.com/wspx/DadosAbertoFlask/master/static/github.svg
 
-[logoGithub] WSPX
-[logoGithub] Clodonil
-
----
+![logoGithub] WSPX
+![logoGithub] Clodonil
 
 ***
 
