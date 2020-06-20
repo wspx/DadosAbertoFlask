@@ -8,7 +8,7 @@
 ***
 ### Breve Descrição
 
-Este é um pequeno projeto Web que utilizan o Microframework Flask para manipula a API dos Dados Aberto da Câmara dos Deputados, e traz os dados em uma página web.
+Este é um pequeno projeto Web que utiliza o Microframework Flask para manipula a API dos Dados Aberto da Câmara dos Deputados, e traz os dados em uma página web.
 
 ### Agradecimento
 
