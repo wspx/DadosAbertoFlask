@@ -56,6 +56,8 @@ git clone https://github.com/wspx/DadosAbertosFlask.git
 cd DadosAbertosFlask
 ```
 
+***
+
 2. **Instalar e Criar um Ambiente Virtual do Python** <a name="item02"></a>
 
    Criar um ambiente virtual ajuda a não poluir o teu Python com um monte de biblioteca de vários projetos no projeto atual.
@@ -80,6 +82,8 @@ pip install virtualenv
 virtualenv .venv
 ```
 
+***
+
 3. **Ativar e Desativar o Ambiente Virtual** <a name="item03"></a>
 
    Para ativar o ambiente virtual, basta digitar o comando abaxio de acordo com o teu Sistema Operacional.
@@ -102,6 +106,8 @@ source .venv/bin/activate
 deactivate
 ```
 
+***
+
 4. **Instalar as Dependências do Projeto** <a name="item04"></a>
 
    Todas as dependências deste projeto estão listadas no arquivo [*requirements.txt*](https://github.com/wspx/DadosAbertoFlask/blob/master/requirements.txt).
@@ -114,6 +120,8 @@ deactivate
 pip install -r requirements.txt
 ```   
 
+***
+
 5. **Executar o Projeto** <a name="item05"></a>
 
    Após feitos todos os passos anteriores, basta digitar o comando abaixo iniciar o Servidor Web do Flask:
@@ -123,6 +131,8 @@ pip install -r requirements.txt
 ```bash
 python app.py
 ``` 
+
+***
 
 6. **Extras** <a name="item06"></a>
    
@@ -136,6 +146,8 @@ python app.py
 if __name__ == "__main__":
    app.run(host='0.0.0.0', debug=True, port=8080)
 ``` 
+
+***
 
 
 
