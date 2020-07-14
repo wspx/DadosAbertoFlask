@@ -40,23 +40,23 @@ git clone https://github.com/wspx/DadosAbertosFlask.git
 
 ### Sumário
 
-1. [Abra a pasta onde este projeto foi clonado](#)
-2. [Instalar e Criar um Ambiente Virtual do Python](#)
-3. [Ativar e Desativar o Ambiente Virtual](#)
-4. [Instalar as Dependências do Projeto](#)
-5. [Executar o Projeto](#)
-6. [Extras](#)
+1. [Abra a pasta onde este projeto foi clonado](#item01)
+2. [Instalar e Criar um Ambiente Virtual do Python](#item02)
+3. [Ativar e Desativar o Ambiente Virtual](#item03)
+4. [Instalar as Dependências do Projeto](#item04)
+5. [Executar o Projeto](#item05)
+6. [Extras](#item06)
 
 ***
 
 
-1. **Abra a pasta onde este projeto foi clonado**
+1. **Abra a pasta onde este projeto foi clonado** <a name="item01"></a>
 
 ```bash
 cd DadosAbertosFlask
 ```
 
-2. **Instalar e Criar um Ambiente Virtual do Python**
+2. **Instalar e Criar um Ambiente Virtual do Python** <a name="item02"></a>
 
    Criar um ambiente virtual ajuda a não poluir o teu Python com um monte de biblioteca de vários projetos no projeto atual.
 
@@ -80,7 +80,7 @@ pip install virtualenv
 virtualenv .venv
 ```
 
-3. **Ativar e Desativar o Ambiente Virtual**
+3. **Ativar e Desativar o Ambiente Virtual** <a name="item03"></a>
 
    Para ativar o ambiente virtual, basta digitar o comando abaxio de acordo com o teu Sistema Operacional.
    
@@ -102,7 +102,7 @@ source .venv/bin/activate
 deactivate
 ```
 
-4. **Instalar as Dependências do Projeto**
+4. **Instalar as Dependências do Projeto** <a name="item04"></a>
 
    Todas as dependências deste projeto estão listadas no arquivo [*requirements.txt*](https://github.com/wspx/DadosAbertoFlask/blob/master/requirements.txt).
    
@@ -114,7 +114,7 @@ deactivate
 pip install -r requirements.txt
 ```   
 
-5. **Executar o Projeto**
+5. **Executar o Projeto** <a name="item05"></a>
 
    Após feitos todos os passos anteriores, basta digitar o comando abaixo iniciar o Servidor Web do Flask:
    
@@ -124,7 +124,7 @@ pip install -r requirements.txt
 python app.py
 ``` 
 
-6. **Extras**
+6. **Extras** <a name="item06"></a>
    
    Ao executar pela primeira vez a aplicação, ela está configurado para sempre ser acessível apenas no *localhost ou 127.0.0.1* da porta *8080*.
    
